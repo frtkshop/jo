@@ -9,7 +9,7 @@ import numpy as np
 from PIL import Image
 import asyncio
 
-print(DISCORD_TOKEN)
+print(TOKEN)
 # サーバーごとのデフォルト設定を保持する辞書
 server_settings = {}
 
