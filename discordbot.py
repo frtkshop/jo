@@ -9,7 +9,6 @@ import numpy as np
 from PIL import Image
 import asyncio
 
-print(TOKEN)
 # サーバーごとのデフォルト設定を保持する辞書
 server_settings = {}
 
@@ -26,6 +25,8 @@ dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
 TOKEN = os.getenv("DISCORD_TOKEN")
+
+print(TOKEN)
 
 intents = discord.Intents.default()
 intents.members = True  # メンバー管理の権限
